@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayline — For all the places we’ll go</title>
+<meta name="description" content="A four-minute film of Wayline, a collaborative trip planner: a Sydney weekend, planned together.">
+<meta property="og:title" content="Wayline — For all the places we’ll go">
+<meta property="og:image" content="poster.jpg">
+<style>
+  :root { --paper: #f4f3ef; --ink: #15171a; --muted: #6b7079; --coral: #e5482d; --line: #e1dfd8; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #111316; --ink: #f1efe9; --muted: #9aa0a9; --line: #2a2d32; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1120px; margin: 0 auto; padding: 40px 16px 56px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  header svg { width: 36px; height: 36px; flex: none; }
+  header b { font-size: 22px; letter-spacing: -.02em; }
+  h1 { font: italic 600 clamp(28px, 5vw, 46px)/1.1 Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 22px; }
+  video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 12px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 18px 0 30px; }
+  .links a { color: var(--coral); font-weight: 600; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  section { border-top: 1px solid var(--line); padding-top: 18px; font-size: 14px; color: var(--muted); }
+  section h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 8px; color: var(--ink); }
+  section p { margin: 0 0 6px; }
+  section a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#E5482D"/><path d="M16 44c6-14 14 4 20-10s10-8 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/><circle cx="16" cy="44" r="5" fill="#fff"/><path d="M48 12a7 7 0 00-7 7c0 5 7 12 7 12s7-7 7-12a7 7 0 00-7-7z" fill="#FAF6EF"/><circle cx="48" cy="19" r="2.6" fill="#E5482D"/></svg>
+    <b>Wayline</b>
+  </header>
+  <h1>For all the places we’ll go.</h1>
+  <p class="sub">A Sydney weekend, planned together · 4 min · sound on</p>
+  <video controls preload="metadata" playsinline poster="poster.jpg">
+    <source src="wayline-story.mp4" type="video/mp4">
+    <a href="wayline-story.mp4">Download the film (MP4)</a>
+  </video>
+  <div class="links">
+    <a href="https://comp4020-final-lyclccylcq.fly.dev/">Try Wayline live</a>
+    <a href="https://comp4020-final-lyclccylcq.fly.dev/readme/">Read the README</a>
+    <a href="wayline-story.mp4" download>Download MP4</a>
+  </div>
+  <section>
+    <h2>Credits</h2>
+    <p>Music: “Letter in Orange” (酸橙色信笺), Arknights EP · *Luna, vocals DAZBEE. Used for a non-commercial university course project (ANU COMP8020).</p>
+    <p>People footage and photo stills: Mixkit (Mixkit Stock Video Free License).</p>
+    <p>App footage: screen recordings of Wayline (November 2026 build) with Google Maps Platform data. Photos inside the app are Wikimedia Commons files, each credited at <a href="https://comp4020-final-lyclccylcq.fly.dev/credits">/credits</a>.</p>
+  </section>
+</main>
+</body>
+</html>
